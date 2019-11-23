@@ -23,13 +23,13 @@ public class DBSeeder implements CommandLineRunner {
         List<PaymentMethods> paymentMethods = new ArrayList<>();
         paymentMethods.add(new PaymentMethods("credit card", "credit card", "CREDIT_CARD",
                 Arrays.asList(
-                        new PaymentPlans("1", 5.99, 13.5, 14.5, "currency", "september")
+                        new PaymentPlans("1", 5.99, 13.5, 14.5, "USD", "september")
                 )));
 
         paymentMethods.add(new PaymentMethods("alfa_lb", "Alfa Lebanon", "MOBILE_CARRIER",
                 Arrays.asList(
-                        new PaymentPlans("72", 5.99, 0, 5.99, "SAR", "Month"),
-                        new PaymentPlans("54", 10, 0, 10, "USD", "Week")
+                        new PaymentPlans("72", 5.99, 0, 5.99, "USD", "Month"),
+                        new PaymentPlans("54", 10, 0, 10, "SAR", "Week")
                 )
         ));
         this.paymentRepository.deleteAll();
