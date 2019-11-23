@@ -2,7 +2,7 @@ package com.controller;
 
 import com.domain.PaymentMethods;
 import com.domain.UnwindPaymentMethods;
-import com.handler.AllPaymentsHandler;
+import com.handler.PaymentsHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,9 +12,9 @@ import java.util.List;
 @RestController
 public class PaymentController {
 
-    private AllPaymentsHandler allPaymentsHandler;
+    private PaymentsHandler allPaymentsHandler;
 
-    public PaymentController(AllPaymentsHandler allPaymentsHandler) {
+    public PaymentController(PaymentsHandler allPaymentsHandler) {
         this.allPaymentsHandler = allPaymentsHandler;
     }
 

@@ -2,16 +2,16 @@ package com.handler;
 
 import com.domain.PaymentMethods;
 import com.domain.UnwindPaymentMethods;
-import com.service.AllPaymentsService;
+import com.service.PaymentsService;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-public class AllPaymentsHandler {
-    private AllPaymentsService allPaymentsService;
+public class PaymentsHandler {
+    private PaymentsService allPaymentsService;
 
-    public AllPaymentsHandler(AllPaymentsService allPaymentsService) {
+    public PaymentsHandler(PaymentsService allPaymentsService) {
         this.allPaymentsService = allPaymentsService;
     }
 

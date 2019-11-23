@@ -16,12 +16,12 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class AllPaymentsService {
+public class PaymentsService {
     private final MongoTemplate mongoTemplate;
     private PaymentRepository paymentRepository;
 
     @Autowired
-    public AllPaymentsService(PaymentRepository paymentRepository, MongoTemplate mongoTemplate) {
+    public PaymentsService(PaymentRepository paymentRepository, MongoTemplate mongoTemplate) {
         this.paymentRepository = paymentRepository;
         this.mongoTemplate = mongoTemplate;
     }
